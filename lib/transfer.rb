@@ -15,6 +15,7 @@ class Transfer
   end
 
   def execute_transaction
+    binding.pry
     if @status != "complete" && @sender.valid?
       @sender.balance -= @amount
       @receiver.balance += @amount
