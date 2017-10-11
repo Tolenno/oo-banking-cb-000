@@ -23,4 +23,5 @@ class Transfer
       "Double spend protector"
     end
   end
+  binding.pry
 end
