@@ -9,6 +9,6 @@ class Transfer
   end
 
   def valid?
-
+    @sender.valid? && @receiver.valid check if account valid?
   end
 end
