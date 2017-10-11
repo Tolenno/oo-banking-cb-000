@@ -27,5 +27,3 @@ class Transfer
     end
   end
 end
-
-binding.pry
