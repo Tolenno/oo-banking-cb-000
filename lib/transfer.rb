@@ -20,7 +20,7 @@ class Transfer
     elsif @sender.valid?
       "Transaction rejected. Please check your account balance."
     else
-      "Duplicate transaction!"
+      "Double spend protector"
     end
   end
 end
