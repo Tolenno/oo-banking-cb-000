@@ -18,7 +18,9 @@ class Transfer
       @receiver.balance += @amount
       @status = "complete"
     elsif @sender.valid?
-      "Transaction rejected. Please check your account balance."      
+      "Transaction rejected. Please check your account balance."
+    else
+      "Duplicate transaction!"
     end
   end
 end
