@@ -21,8 +21,11 @@ class Transfer
       @status = "complete"
     elsif @sender.valid? == false
       "Transaction rejected. Please check your account balance."
+      @status = "rejected"
     else
       "Double spend protector"
     end
   end
 end
+
+binding.pry
