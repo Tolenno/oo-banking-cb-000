@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    @sender loses @amount
+    @sender -= @amount
     @receiver gains @amount
   end
 end
